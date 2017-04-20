@@ -5,6 +5,7 @@
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <!-- Custom Theme files -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- Custom Theme files -->
@@ -45,20 +46,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body id="page-top">
 <!---->
 
-<nav class="navbar navbar-default navbar-fixed-top templatemo-nav navbar-inverse" id="mainNav" role="navigation">
+<div id="mainNav" class="navbar navbar-default navbar-fixed-top"  >
 	<div class="container">
-<div class="row">
 		<div class="navbar-header" style="margin-top:5px">
-			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<a href="#page-top" class="navbar-brand" >Ubix</a>
+			<button id="toggle" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 			</button>
-			<a href="#page-top" class="navbar-brand" >Ubix</a>
+			
 		</div>
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="nav navbar-nav navbar-right text-uppercase ">
-			<li class="nav-item"><a class="nav-link" href="#testimonial">Statement</a></li>
+				<li class="nav-item"><a class="nav-link" href="#testimonial">Statement</a></li>
 				<li class="nav-item"><a class="nav-link" href="#features">FEATURES</a></li>
 				<li class="nav-item"><a class="nav-link" href="#screenshots">SCREENSHOTS</a></li>
 		
@@ -68,7 +69,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 </div>
-</nav>
 <div class="banner">
 	 <div class="container">
 		 <div class="header">	 
@@ -111,7 +111,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		
 	<div class="container text-center" style="margin-top: 100px; color: #0199e6;">	
-	<div class="text-center wow fadeInUp" data-wow-delay="1s">
+	<div class="text-center wow fadeInUp" data-wow-delay="0.7s">
 		<div class="row" style="margin-bottom: 50px;">
 		<h3client>UBIX will take care of everything</h3client>
 		</div>
@@ -131,37 +131,40 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<a href="feature.html">Details</a>
 	 </div>
 		 <div class="features-section">
-			 <div class="col-md-4 feature-grid text-center">
+		 <div class="row">
+			 <div class="col-md-4 col-sm-6 col-xs-12 feature-grid text-center">
 			 <img src="images/mic2.png" class="wow bounceIn" data-wow-delay="0.5s"></img>
 			 <h3>Audio Detection</h3>
-			 <p>The sound feature can refer to our camera via a microphone. Under the guidance of audio, the camera can capture details effectively.</p>
+			 <p>The sound feature can refer to our camera via a microphone. Under the guidance of audio, the camera can capture details.</p>
 			 </div>
-			 <div class="col-md-4 feature-grid text-center">
+			 <div class="col-md-4 col-sm-6 col-xs-12 feature-grid text-center">
 			 <img src="images/rot3.png" class="wow bounceIn" data-wow-delay="0.5s"></img>
 			 <h3>Automatic Movement</h3>
 			 <p>Our camera identifies disturbance, and rotates towards it. It captures everything, even outside its field of vision.</p>
 			 </div>
-			 <div class="col-md-4 feature-grid text-center">
+			 <div class="col-md-4 col-sm-6 col-xs-12 feature-grid text-center">
 			 <img src="images/night.png" class="wow bounceIn" data-wow-delay="0.5s"></img>
 			 <h3>Night Vision</h3>
 			 <p>Our camera can record images in low to no light situations. Even if there is no light, audio detection ensures safety.</p>
 			 </div>
-			  <div class="clearfix"></div>
-			 <div class="col-md-4 feature-grid text-center">
+		</div>
+		<div class="row">
+		
+			 <div class="col-md-4 col-sm-6 col-xs-12 feature-grid text-center">
 			 <img src="images/alert3.png" class="wow bounceIn" data-wow-delay="1s"></img>
 			 <h3>Instant Alert</h3>
 			 <p>Our camera can send you notifications when the camera detects suspicious events. These notifications can alert you to suspicious activity, so you can monitor the situation</p>
 			 </div>
-			 <div class="col-md-4 feature-grid text-center">
+			 <div class="col-md-4 col-sm-6 col-xs-12 feature-grid text-center">
+			 <img src="images/cloud.png" class="wow bounceIn" data-wow-delay="1s"></img>
+			 <h3>Cloud storage</h3>
+			 <p>With cloud storage, your footage -- either event-based or continuous -- is sent off to remote servers. And we will mark the suspicious activity, so you can check them conveniently</p>
+			 </div>
+			 <div class="col-md-4 col-sm-6 col-xs-12 feature-grid text-center">
 			 <img src="images/res2.png" class="wow bounceIn" data-wow-delay="1s"></img>
 			 <h3>Resolution</h3>
 			 <p>Our camera has high resolution. A clearly visible image is very helpful when trying to identify faces or items in the images your camera records.</p>
 			 </div>
-			 <div class="col-md-4 feature-grid text-center">
-			 <img src="images/cloud.png" class="wow bounceIn" data-wow-delay="1s"></img>
-			 <h3>Cloud storage</h3>
-			 <p>With cloud storage, your footage -- either event-based or continuous -- is sent off to remote servers. And we will mark the suspicious activity, so you can check them conveniently</p>
-
 			 </div>
 		 </div>
 	 </div>
@@ -194,21 +197,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					 <img src="images/New-folder/1.jpg">					 
 				 </div>
 				 <div class="col-md-4 image-grid">
-					 <img src="images/New-folder/3.JPG">					 
+					 <img src="images/New-folder/3.jpg">					 
 				 </div>
 				 <div class="col-md-4 image-grid">
-					 <img src="images/New-folder/8.JPG">				 
+					 <img src="images/New-folder/8.jpg">				 
 				 </div>				   
 			  </div>			  
 			  <div class="item text-center guide-sliders">
 				 <div class="col-md-4 image-grid">
-					 <img src="images/New-folder/4.JPG">				 
+					 <img src="images/New-folder/4.jpg">				 
 				 </div>
 				 <div class="col-md-4 image-grid">
-					 <img src="images/New-folder/5.JPG">				 
+					 <img src="images/New-folder/5.jpg">				 
 				 </div>
 				 <div class="col-md-4 image-grid">
-					 <img src="images/New-folder/6.JPG">				 
+					 <img src="images/New-folder/6.jpg">				 
 				 </div>						
 			  </div>
 	 </div>
@@ -259,7 +262,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<img src="images/xin.jpg" class="img-responsive" alt="team img 1">
 						<div class="team-des">
 							<h4>Xin</h4>
-							<p>Developer and programmer, some experience with machine-learning algorithms.</p>
+							<p>Computer scientist, experienced with developing machine-learning algorithms.</p>
 						</div>
 				</div>
 			</div>
@@ -299,17 +302,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!---->
 <script type="text/javascript">
-		$(document).ready(function() {
-				/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-				*/
-		$().UItoTop({ easingType: 'easeOutQuart' });
-		
+	$(document).ready(function() {
+	var toggle2 = false;
+			/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+			*/
+	$().UItoTop({ easingType: 'easeOutQuart' });
+	
     // Smooth scrolling using jQuery easing
     $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -329,8 +333,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     $('.navbar-collapse>ul>li>a').click(function() {
         $('.navbar-collapse').collapse('hide');
     });
+	$('#toggle').click(function() {
+		if(!toggle2){
+			$('#mainNav').css("background-color","black");
+			toggle2 = true;
+		}
+		else{
+			$('#mainNav').css("background-color","transparent");
+			toggle2 = false;
+		}
+	});
 
-		    // Collapse the navbar when page is scrolled
+	// Collapse the navbar when page is scrolled
     $(window).scroll(function() {
         if ($("#mainNav").offset().top > 100) {
             $("#mainNav").addClass("navbar-shrink");

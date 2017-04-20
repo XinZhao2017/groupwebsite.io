@@ -5,6 +5,7 @@
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <!-- Custom Theme files -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- Custom Theme files -->
@@ -42,28 +43,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <body id="page-top">
 <!---->
-<nav class="navbar navbar-default navbar-fixed-top templatemo-nav navbar-inverse" id="mainNav" role="navigation">
+<div id="mainNav" class="navbar navbar-default navbar-fixed-top"  >
 	<div class="container">
-<div class="row">
 		<div class="navbar-header" style="margin-top:5px">
-			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<a href="#page-top" class="navbar-brand" >Ubix</a>
+			<button id="toggle" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 			</button>
-			<a href="#page-top" class="navbar-brand" >Ubix</a>
+			
 		</div>
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="nav navbar-nav navbar-right text-uppercase ">
 				<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 				<li class="nav-item"><a class="nav-link" class="scroll" href="#pricing">PRICE</a></li>
 				<li class="nav-item"><a class="nav-link"class="scroll" href="#contact">CONTACT</a></li>
-				
 			</ul>
 		</div>
 	</div>
 </div>
-</nav>
 
 <div class="banner2">
 	 <div class="container">
@@ -222,6 +221,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <script type="text/javascript">
 		$(document).ready(function() {
+		var toggle2 = false;
 				/*
 				var defaults = {
 				containerID: 'toTop', // fading element id
@@ -251,6 +251,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     $('.navbar-collapse>ul>li>a').click(function() {
         $('.navbar-collapse').collapse('hide');
     });
+
+		$('#toggle').click(function() {
+		if(!toggle2){
+			$('#mainNav').css("background-color","black");
+			toggle2 = true;
+		}
+		else{
+			$('#mainNav').css("background-color","transparent");
+			toggle2 = false;
+		}
+	});
 
 		    // Collapse the navbar when page is scrolled
     $(window).scroll(function() {
